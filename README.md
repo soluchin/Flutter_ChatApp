@@ -1,16 +1,26 @@
-# chatui
+# chatApp
 
-A new Flutter project.
+Learning flutter project by creatin an chat app.
+
+Requirements:
+- Flutter must already be installed on your computer. [click](https://docs.flutter.dev/get-started/install/windows) to see installataion.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+First you have to prepare a connection to your android device using USB.
 
-A few resources to get you started if this is your first Flutter project:
+### Build an APK
+Command line:
+- Enter `cd [project]`
+- Run `flutter build apk --split-per-abi`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This command results in three APK files:
+- [project]/build/app/outputs/apk/release/app-armeabi-v7a-release.apk
+- [project]/build/app/outputs/apk/release/app-arm64-v8a-release.apk
+- [project]/build/app/outputs/apk/release/app-x86_64-release.apk
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Install APK on an Android Device
+Command line:
+- Connect your Android device to your computer with a USB cable.
+- Enter `cd [project]`
+- Run `flutter install`
